@@ -15,5 +15,13 @@ var questions = [
             { text: "Computer Style Sheets", correct: false },
             { text: "Cascading Style Sheets", correct: true }
         ]
+    }, {
+        question: "What does the font property all you to do?",
+        answers: [
+            { text: "Set size & family", correct: true },
+            { text: "Create text", correct: false },
+            { text: "Re-assign variables", correct: false },
+            { text: "Define text position", correct: false }
+        ]
     }
 ];

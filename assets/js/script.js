@@ -11,6 +11,8 @@ var timerId;
 var timerEl = document.getElementById("time");
 var score = 0;
 var finalScoreEl = document.getElementById("finalscore");
+var submitBtn = document.getElementById("submit");
+var initialsEl = document.getElementById("initials");
 
 //start quiz
 function startQuiz() {
@@ -91,4 +93,23 @@ function quizEnd() {
     clearInterval(timerId);
 }
 
+function highscore(){
+    let initials = initialsEl.value.trim();
+
+
+    if (initials !== '') {
+        let highscores = JSON.parse(localStorage.getItem('highscores')) || [];
+
+        let newHighScore = {
+            initials: initials,
+            highscore: score
+        };
+
+        highscores.push(newHighScore);
+        localStorage.setItem('highscores', JSON.stringify(highscores));
+        location.href="highscore.html";
+    }
+}
+
 startBtn.onclick = startQuiz;
+submitBtn.onclick = highscore;

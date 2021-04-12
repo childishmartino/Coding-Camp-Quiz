@@ -21,8 +21,8 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-link to site: https://childishmartino.github.io/homework04/
+link to site: https://childishmartino.github.io/Coding-Camp-Quiz/
 
-link to repo: https://github.com/childishmartino/homework04
+link to repo: https://github.com/childishmartino/Coding-Camp-Quiz
 
 ![screenshot of homework.](./assets/images/screenshothomework04.png)
